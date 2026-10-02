@@ -20,7 +20,7 @@ public class Main {
         // System.out.println(nickel.getTails());
         // Game g = new Game();
         // g.play();
-        File file = new File("flips(1).txt");
+        File file = new File("flips (1).txt");
         Scanner s = new Scanner(file);
         int heads = 0;
         int tails = 0;

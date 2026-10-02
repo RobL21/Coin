@@ -3,12 +3,15 @@ public class Coin {
     private int heads;
     private int tails;
     private double pTails;
-    public Coin(double pt){
+
+    public Coin(double pt) {
         pTails = pt;
     }
+
     public Coin() {
         pTails = 0.5;
     }
+
     public void setPTails(double pt) {
         pTails = pt;
     }
@@ -25,7 +28,7 @@ public class Coin {
         return tails;
     }
 
-    public void flip(){
+    public void flip() {
         if (Math.random() < pTails) {
             state = "tails";
             tails++;
@@ -38,6 +41,6 @@ public class Coin {
     public void flip(int flips) {
         while (flips > 0)
             flip();
-            flips--;
-        }
+        flips--;
     }
+}
